@@ -109,43 +109,60 @@ table {
 	
     /* Stand + CDs + witruimte */
         #Stand{
-            height: 20vh;
+            height: 30vh;
+            background-image: url("Sprites/Stand.png");
+            background-repeat: no-repeat;
+            width: 1484px;
+            height: 214px;
+            margin: auto;
+            display: block;
         }
 
         /* CDs */
+            /* Algemeen */
+            .cover{
+                background-repeat: no-repeat;
+                width: 108px;
+                height: 557px;
+                margin: auto;
+                display: block;
+            }
+
             /* "Who's In Control" - Set It Off */
             #WIC{
-                height: 40vh;
+                background-image: url("Sprites/WIC.png");
             }
 
             /* "Innuendo" - nelward */
             #INNU{
-                height: 40vh;
+                background-image: url("Sprites/INNU.png");
             }
 
             /* "Moonsetter" - Toby Fox */
             #MS{
-                height: 40vh;
+                background-image: url("Sprites/MS.png");
             }
 
             /* "A Sadness Runs Through Him" - The Hoosiers */
             #ASRTH{
-                height: 40vh;
+                background-image: url("Sprites/ASRTH.png");
             }
 
              /* "Little Talks" - Of Monsters and Men */
              #LT{
-                height: 40vh;
+                background-image: url("Sprites/LT.png");
             }
 
         /* Witruimte (stand) */
             .witruimteStand{
                 height: 40vh;
+                background-color:yellow;
             }
 
         /* Witruimte (buiten) */
             .witruimteBuiten{
-                height: 60vh;
+                height: 14vh;
+                background-color:yellow;
             }
             
         body {
