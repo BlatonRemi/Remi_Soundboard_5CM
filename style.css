@@ -80,14 +80,72 @@ table {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
-	
-    body {
-        background-color: #fdefe3;
+
+ /* Stand + CDs + witruimte */
+    #Stand{
+        background-size: contain;
+        height: 10vh;
+        background-image: url("Sprites/Stand2.png");
+        background-repeat: no-repeat;
+        margin: auto;
+        display: block;
     }
+
+/* CDs */
+    /* Algemeen */
+    .cover{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 30vh;
+        margin: auto;
+        display:block;
+    }
+
+    /* "Who's In Control" - Set It Off */
+    #WIC{
+        background-image: url("Sprites/WIC.png");
+    }
+
+    /* "Innuendo" - nelward */
+    #INNU{
+        background-image: url("Sprites/INNU.png");
+    }
+
+    /* "Moonsetter" - Toby Fox */
+    #MS{
+        background-image: url("Sprites/MS.png");
+    }
+
+    /* "A Sadness Runs Through Him" - The Hoosiers */
+    #ASRTH{
+        background-image: url("Sprites/ASRTH.png");
+    }
+
+     /* "Little Talks" - Of Monsters and Men */
+     #LT{
+        background-image: url("Sprites/LT.png");
+    }
+
+/* Witruimte */    
+    /* Witruimte (stand) */
+        .witruimteStand{
+            height: 40vh;
+            background-color:yellow;
+        }
+
+    /* Witruimte (buiten) */
+        .witruimteBuiten{
+            height: 14vh;
+            background-color:yellow;
+        }
     
-    #PlayingSong{
-        display: none;
-    }
+body {
+    background-color: #fdefe3;
+}
+
+#PlayingSong{
+    display: none;
+}
 
 	/* MOBIELE code binnen deze accolades van het @media stuk */
 }
@@ -121,6 +179,7 @@ table {
         /* CDs */
             /* Algemeen */
             .cover{
+                background-size:contain;
                 background-repeat: no-repeat;
                 width: 108px;
                 height: 557px;
@@ -153,17 +212,18 @@ table {
                 background-image: url("Sprites/LT.png");
             }
 
-        /* Witruimte (stand) */
-            .witruimteStand{
-                height: 40vh;
-                background-color:yellow;
-            }
+        /* Witruimte */    
+            /* Witruimte (stand) */
+                .witruimteStand{
+                    height: 40vh;
+                    background-color:yellow;
+                }
 
-        /* Witruimte (buiten) */
-            .witruimteBuiten{
-                height: 14vh;
-                background-color:yellow;
-            }
+            /* Witruimte (buiten) */
+                .witruimteBuiten{
+                    height: 14vh;
+                    background-color:yellow;
+                }
             
         body {
             background-color: #fdefe3;
