@@ -129,14 +129,14 @@ table {
 /* Witruimte */    
     /* Witruimte (stand) */
         .witruimteStand{
-            height: 40vh;
-            background-color:yellow;
+            height: 30vh;
+            /* background-color:yellow; */
         }
 
     /* Witruimte (buiten) */
         .witruimteBuiten{
-            height: 14vh;
-            background-color:yellow;
+            height: 30vh;
+            /* background-color:yellow; */
         }
     
 body {
@@ -166,25 +166,24 @@ body {
     .col-12 {width: 100%;}
 	
     /* Stand + CDs + witruimte */
-        #Stand{
-            height: 30vh;
-            background-image: url("Sprites/Stand.png");
-            background-repeat: no-repeat;
-            width: 1484px;
-            height: 214px;
-            margin: auto;
-            display: block;
-        }
+    #Stand{
+        background-size: contain;
+        height: 10vh;
+        background-image: url("Sprites/Stand2.png");
+        background-repeat: no-repeat;
+        margin: auto;
+        
+        display: block;
+    }
 
         /* CDs */
             /* Algemeen */
             .cover{
-                background-size:contain;
+                background-size: contain;
                 background-repeat: no-repeat;
-                width: 108px;
-                height: 557px;
+                height: 40vh;
                 margin: auto;
-                display: block;
+                display:block;
             }
 
             /* "Who's In Control" - Set It Off */
