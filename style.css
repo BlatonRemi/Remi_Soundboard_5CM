@@ -169,47 +169,58 @@ body {
     #Stand{
         background-size: contain;
         height: 10vh;
+        width:60%;
         background-image: url("Sprites/Stand2.png");
         background-repeat: no-repeat;
         margin: auto;
-        
         display: block;
     }
 
         /* CDs */
             /* Algemeen */
+            #ParentCovers{
+                margin: auto;
+                display:block;
+                height: 50vh;
+                width: 50%;
+                margin-bottom:-15vh;
+            }
+
             .cover{
                 background-size: contain;
                 background-repeat: no-repeat;
                 height: 40vh;
-                margin: auto;
-                display:block;
+                border: solid 1px red;
+                margin-left:20px;
+                width:5vw;
+                float:left;
+                z-index:600;
             }
 
-            /* "Who's In Control" - Set It Off */
-            #WIC{
-                background-image: url("Sprites/WIC.png");
-            }
+                /* "Who's In Control" - Set It Off */
+                #WIC{
+                    background-image: url("Sprites/WIC.png");
+                }
 
-            /* "Innuendo" - nelward */
-            #INNU{
-                background-image: url("Sprites/INNU.png");
-            }
+                /* "Innuendo" - nelward */
+                #INNU{
+                    background-image: url("Sprites/INNU.png");
+                }
 
-            /* "Moonsetter" - Toby Fox */
-            #MS{
-                background-image: url("Sprites/MS.png");
-            }
+                /* "Moonsetter" - Toby Fox */
+                #MS{
+                    background-image: url("Sprites/MS.png");
+                }
 
-            /* "A Sadness Runs Through Him" - The Hoosiers */
-            #ASRTH{
-                background-image: url("Sprites/ASRTH.png");
-            }
+                /* "A Sadness Runs Through Him" - The Hoosiers */
+                #ASRTH{
+                    background-image: url("Sprites/ASRTH.png");
+                }
 
-             /* "Little Talks" - Of Monsters and Men */
-             #LT{
-                background-image: url("Sprites/LT.png");
-            }
+                /* "Little Talks" - Of Monsters and Men */
+                #LT{
+                    background-image: url("Sprites/LT.png");
+                }
 
         /* Witruimte */    
             /* Witruimte (stand) */
