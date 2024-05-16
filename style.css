@@ -85,6 +85,7 @@ table {
     #Stand{
         background-size: contain;
         height: 10vh;
+        width:60%;
         background-image: url("Sprites/Stand2.png");
         background-repeat: no-repeat;
         margin: auto;
@@ -93,12 +94,23 @@ table {
 
 /* CDs */
     /* Algemeen */
+    #ParentCovers{
+        margin: auto;
+        display:block;
+        height: 34vh;
+        width: 50%;
+        margin-bottom:-15vh;
+    }
+
     .cover{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 30vh;
-        margin: auto;
-        display:block;
+        height: 20vh;
+        border: solid 1px red;
+        margin-right: 6.2%;
+        width: 15%;
+        float:left;
+        z-index:600;
     }
 
     /* "Who's In Control" - Set It Off */
@@ -124,18 +136,19 @@ table {
      /* "Little Talks" - Of Monsters and Men */
      #LT{
         background-image: url("Sprites/LT.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 20vh;
+        border: solid 1px red;
+        width: 15%;
+        float:left;
+        z-index:600;
     }
 
 /* Witruimte */    
-    /* Witruimte (stand) */
-        .witruimteStand{
-            height: 30vh;
-            /* background-color:yellow; */
-        }
-
     /* Witruimte (buiten) */
         .witruimteBuiten{
-            height: 30vh;
+            height: 35vh;
             /* background-color:yellow; */
         }
     
@@ -165,6 +178,12 @@ body {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 	
+    /* Selection music */
+        /* Tijdens dat je werkt aan het nieuwe scherm voor liedjes te laten spelen, plaats hier een display: none;. */
+      /*  #SelectionMusic{
+            display: none;
+        } */
+
     /* Stand + CDs + witruimte */
     #Stand{
         background-size: contain;
@@ -182,8 +201,8 @@ body {
                 margin: auto;
                 display:block;
                 height: 50vh;
-                width: 50%;
-                margin-bottom:-15vh;
+                width: 41%;
+                margin-bottom: -15vh;
             }
 
             .cover{
@@ -192,7 +211,7 @@ body {
                 height: 40vh;
                 border: solid 1px red;
                 margin-left:20px;
-                width:5vw;
+                width:6vw;
                 float:left;
                 z-index:600;
             }
@@ -220,29 +239,84 @@ body {
                 /* "Little Talks" - Of Monsters and Men */
                 #LT{
                     background-image: url("Sprites/LT.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 40vh;
+                    border: solid 1px red;
+                    margin-left:20px;
+                    width:6vw;
+                    float:left;
+                    z-index:600;
                 }
 
         /* Witruimte */    
-            /* Witruimte (stand) */
-                .witruimteStand{
-                    height: 40vh;
-                    background-color:yellow;
-                }
-
             /* Witruimte (buiten) */
                 .witruimteBuiten{
-                    height: 14vh;
-                    background-color:yellow;
+                    height: 27vh;
+                    /* background-color:yellow;*/
                 }
             
         body {
             background-color: #fdefe3;
         }
 
+        /* PlayingSong */
         #PlayingSong{
-            display: none;
+           /* display: none; */ 
+            width:100vw;
+            height:100vh;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:500;
         }
-    
+
+        #PlayingSongBackground{
+            /* display: none; */ 
+             width:100vw;
+             height:100vh;
+             background-color: black;
+             opacity: 0.5;
+             position:absolute;
+             top:0;
+             left:0;
+             z-index:500;
+         }
+        
+        /* Witruimte Playing */
+        .witruimtePlaying{
+            height: 50vh;
+        }
+
+        .witruimtePlayingBuiten{
+            height: 10vh;
+        }
+
+        /* Cover/Hoes, CD, Naam & Artiest */
+        #CoverArt{
+            background-color:red;
+            height: 70vh;
+        }
+
+        #CD{
+            background-image: url("Sprites/CDGif.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+        }
+
+        #ParentNaamLiedArtiest{
+            margin: auto;
+            display:block;
+            height: 50vh;
+            width: 41%;
+        }
+
+        #NaamLiedArtiest{
+            background-color: yellow;
+            height: 25vh;
+        }
+
 	/* DESKTOP code binnen deze accolades van het @media stuk */
 
 }
