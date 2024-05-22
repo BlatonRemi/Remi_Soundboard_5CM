@@ -156,9 +156,70 @@ body {
     background-color: #fdefe3;
 }
 
-#PlayingSong{
-    display: none;
-}
+ /* PlayingSong */
+ #PlayingSong{
+    /* display: none; */ 
+     width:100vw;
+     height:100vh;
+     position:absolute;
+     top:0;
+     left:0;
+     z-index:800;
+ }
+
+ #PlayingSongBackground{
+     /* display: none; */ 
+      width:100vw;
+      height:100vh;
+      background-color: black;
+      opacity: 0.5;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:500;
+  }
+ 
+ /* Witruimte Playing */
+ .witruimtePlaying{
+     height: 20vh;
+ }
+
+ .witruimtePlayingBuiten{
+     height: 20vh;
+ }
+
+ /* Cover/Hoes, CD, Naam & Artiest */
+ #CoverArt{
+     background-color:red;
+     height: 20vh;
+ }
+
+ #CD{
+     background-image: url("Sprites/CDGif.gif");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height:20vh;
+ }
+
+ #CDparent{
+    margin: auto;
+    display: block;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: -15vh;
+ }
+
+ #ParentNaamLiedArtiest{
+     margin: auto;
+     display:block;
+     height: 50vh;
+     width: 41%;
+ }
+
+ #NaamLiedArtiest{
+     background-color: yellow;
+     height: 25vh;
+ }
 
 	/* MOBIELE code binnen deze accolades van het @media stuk */
 }
@@ -262,17 +323,17 @@ body {
 
         /* PlayingSong */
         #PlayingSong{
-           /* display: none; */ 
+            display: none;
             width:100vw;
             height:100vh;
             position:absolute;
             top:0;
             left:0;
-            z-index:500;
+            z-index:800;
         }
 
         #PlayingSongBackground{
-            /* display: none; */ 
+            display: none; 
              width:100vw;
              height:100vh;
              background-color: black;
@@ -296,6 +357,14 @@ body {
         #CoverArt{
             background-color:red;
             height: 70vh;
+        }
+
+        #CDparent{
+            display: block;
+            height: 20vh;
+            width: 100%;
+            margin-bottom: -15vh;
+           /* border: red solid 2px; */
         }
 
         #CD{
