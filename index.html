@@ -47,11 +47,11 @@
 	<div class="row">
 		<div class="col-12 col-m-12"> 
 			<div id="ParentCovers">
-				<div class="cover" id="WIC" onclick="veranderCover()">  </div>
-				<div class="cover" id="INNU">  </div>
-				<div class="cover" id="MS">  </div>
-				<div class="cover" id="ASRTH">  </div>
-				<div id="LT">  </div> 
+				<div class="cover" id="WIC" onclick="veranderCoverWIC()" onclick="playAudioWIC()">  </div>
+				<div class="cover" id="INNU" onclick="veranderCoverINNU()">  </div>
+				<div class="cover" id="MS" onclick="veranderCoverMS()">  </div>
+				<div class="cover" id="ASRTH" onclick="veranderCoverASRTH()">  </div>
+				<div id="LT" onclick="veranderCoverLT()">  </div> 
 			</div>
 		</div>
 	</div>
@@ -65,13 +65,59 @@
 	</div>
 </div>
 
-<script type ="text/javascript">
-	function veranderCover(){
-		document.getElementById("PlayingSong").style.display = "block";
-		document.getElementById("NaamLiedArtiest").innerHTML ="Voorbeeldnaam";
-		document.getElementById("CoverArt").style.backgroundImage = "url('Album cover/Who's in Control.png')";
-	}
+<audio id="WICaudio" src="Geluid/Who's In Controll.mp3" preloud="auto">
+</audio>
 
+<script type ="text/javascript">
+
+
+
+	/* Covers/Hoesjes */ 
+		/* "Who's In Control" - Set It Off */
+			function veranderCoverWIC(){
+				var moonSetter = new Audio('Geluid/Moonsetter.mp3');
+				moonSetter.play();
+				document.getElementById("PlayingSong").style.display = "block";
+				document.getElementById("PlayingSongBackground").style.display = "block";
+				document.getElementById("NaamLiedArtiest").innerHTML ="Who's In Control - Set It Off";
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Who's in Control.png')";
+				alert("ja");
+				
+				/* document.getElementById("WICaudio").loop = true; */
+			}
+
+			/* "Innuendo" - nelward */
+			function veranderCoverINNU(){
+				document.getElementById("PlayingSong").style.display = "block";
+				document.getElementById("PlayingSongBackground").style.display = "block";
+				document.getElementById("NaamLiedArtiest").innerHTML ="Innuendo - nelward";
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Innuendo.jpeg')";
+			}
+
+			/* "Moonsetter" - Toby Fox */
+			function veranderCoverMS(){
+				document.getElementById("PlayingSong").style.display = "block";
+				document.getElementById("PlayingSongBackground").style.display = "block";
+				document.getElementById("NaamLiedArtiest").innerHTML ="Moonsetter - Toby Fox";
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Moonsetter.jpg')";
+			}
+
+			/* "A Sadness Runs Through Him" - The Hoosiers */
+			function veranderCoverASRTH(){
+				document.getElementById("PlayingSong").style.display = "block";
+				document.getElementById("PlayingSongBackground").style.display = "block";
+				document.getElementById("NaamLiedArtiest").innerHTML ="A Sadness Runs Through Him - The Hoosiers";
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/A Sadness Runs Through Him.jpeg')";
+			}
+
+			/* "Little Talks" - Of Monsters and Men */
+			function veranderCoverLT(){
+				document.getElementById("PlayingSong").style.display = "block";
+				document.getElementById("PlayingSongBackground").style.display = "block";
+				document.getElementById("NaamLiedArtiest").innerHTML ="Little Talks - Of Monsters and Men";
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Little Talks.jpeg')";
+				document.getElementByID("LTAudio").loop = true;
+			}
 
 </script>
 
