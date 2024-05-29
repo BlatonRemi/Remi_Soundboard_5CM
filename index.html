@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kies een liedje!</title>
 
+<link rel="stylesheet" href="https://use.typekit.net/mol2trv.css">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -15,9 +16,9 @@
 
 	<div class="row">
 		<div class="col-1 col-m-1"> <div class="witruimtePlaying"> / </div></div>
-		<div class="col-4 col-m-4"> <div id="CoverArt"> CoverArt </div></div>
+		<div class="col-4 col-m-4"> <div id="CoverArt"></div></div>
 		<div class="col-2 col-m-2"> <div class="witruimtePlaying"> / </div></div>
-		<div class="col-4 col-m-4"> <div id="CDparent"> <div id="CD"> CD </div></div></div> 
+		<div class="col-4 col-m-4"> <div id="CDparent"> <div id="CD"></div></div></div> 
 		<div class="col-1 col-m-1"> <div class="witruimtePlaying"> / </div></div>
 	</div>
 
@@ -47,7 +48,7 @@
 	<div class="row">
 		<div class="col-12 col-m-12"> 
 			<div id="ParentCovers">
-				<div class="cover" id="WIC" onclick="veranderCoverWIC()" onclick="playAudioWIC()">  </div>
+				<div class="cover" id="WIC" onclick="veranderCoverWIC()">  </div>
 				<div class="cover" id="INNU" onclick="veranderCoverINNU()">  </div>
 				<div class="cover" id="MS" onclick="veranderCoverMS()">  </div>
 				<div class="cover" id="ASRTH" onclick="veranderCoverASRTH()">  </div>
@@ -75,48 +76,56 @@
 	/* Covers/Hoesjes */ 
 		/* "Who's In Control" - Set It Off */
 			function veranderCoverWIC(){
-				var moonSetter = new Audio('Geluid/Moonsetter.mp3');
-				moonSetter.play();
+				var whosInControl = new Audio('Geluid/WhosInControl.mp3');
+				whosInControl.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
 				document.getElementById("NaamLiedArtiest").innerHTML ="Who's In Control - Set It Off";
-				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Who's in Control.png')";
-				alert("ja");
-				
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/WhosInControl.png')";
+
 				/* document.getElementById("WICaudio").loop = true; */
 			}
 
 			/* "Innuendo" - nelward */
 			function veranderCoverINNU(){
+				var innuendo = new Audio('Geluid/Innuendo.mp3');
+				innuendo.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
 				document.getElementById("NaamLiedArtiest").innerHTML ="Innuendo - nelward";
 				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Innuendo.jpeg')";
+				
 			}
 
 			/* "Moonsetter" - Toby Fox */
 			function veranderCoverMS(){
+				var moonSetter = new Audio('Geluid/Moonsetter.mp3');
+				moonSetter.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
 				document.getElementById("NaamLiedArtiest").innerHTML ="Moonsetter - Toby Fox";
 				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Moonsetter.jpg')";
+
 			}
 
 			/* "A Sadness Runs Through Him" - The Hoosiers */
 			function veranderCoverASRTH(){
+				var aSadnessRuns = new Audio('Geluid/ASadnessRunsThroughHim.mp3');
+				aSadnessRuns.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
 				document.getElementById("NaamLiedArtiest").innerHTML ="A Sadness Runs Through Him - The Hoosiers";
-				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/A Sadness Runs Through Him.jpeg')";
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/ASadnessRunsThroughHim.jpeg')";
 			}
 
 			/* "Little Talks" - Of Monsters and Men */
 			function veranderCoverLT(){
+				var littleTalks = new Audio('Geluid/LittleTalks.mp3');
+				littleTalks.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
 				document.getElementById("NaamLiedArtiest").innerHTML ="Little Talks - Of Monsters and Men";
-				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/Little Talks.jpeg')";
-				document.getElementByID("LTAudio").loop = true;
+				document.getElementById("CoverArt").style.backgroundImage = "url('Album covers/LittleTalks.jpeg')";
 			}
 
 </script>

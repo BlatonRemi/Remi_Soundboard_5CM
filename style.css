@@ -158,7 +158,7 @@ body {
 
  /* PlayingSong */
  #PlayingSong{
-    /* display: none; */ 
+     display: none; 
      width:100vw;
      height:100vh;
      position:absolute;
@@ -168,7 +168,7 @@ body {
  }
 
  #PlayingSongBackground{
-     /* display: none; */ 
+      display: none; 
       width:100vw;
       height:100vh;
       background-color: black;
@@ -357,6 +357,8 @@ body {
         #CoverArt{
             background-color:red;
             height: 70vh;
+            background-size:cover;
+            background-repeat:no-repeat;
         }
 
         #CDparent{
@@ -379,11 +381,17 @@ body {
             display:block;
             height: 50vh;
             width: 41%;
+            font-size: 30pt;
+            font-family: "roc-grotesk", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            color: white;
         }
 
         #NaamLiedArtiest{
-            background-color: yellow;
             height: 25vh;
+            padding-top: 10%;
         }
 
 	/* DESKTOP code binnen deze accolades van het @media stuk */
