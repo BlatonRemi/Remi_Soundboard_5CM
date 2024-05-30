@@ -63,7 +63,7 @@ table {
     float: left;
     width: 100%;
 	/* Ter demonstratie hebben kolommen een border, doe maar weg voor je eigen werk */
-	border: solid 1px grey;
+	/* border: solid 1px grey; */
 }
 
 /* Voor MOBIEL */
@@ -190,15 +190,17 @@ body {
 
  /* Cover/Hoes, CD, Naam & Artiest */
  #CoverArt{
-     background-color:red;
-     height: 20vh;
- }
+    background-color:red;
+    height: 23vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
 
  #CD{
      background-image: url("Sprites/CDGif.gif");
      background-repeat: no-repeat;
      background-size: cover;
-     height:20vh;
+     height:23vh;
  }
 
  #CDparent{
@@ -207,19 +209,26 @@ body {
     height: 20vh;
     width: 100%;
     margin-bottom: -15vh;
- }
+    float: left;
+}
 
  #ParentNaamLiedArtiest{
-     margin: auto;
-     display:block;
-     height: 50vh;
-     width: 41%;
- }
+    margin: auto;
+    display:block;
+    height: 50vh;
+    width: 41%;
+    font-size: 15pt;
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
 
- #NaamLiedArtiest{
-     background-color: yellow;
-     height: 25vh;
- }
+#NaamLiedArtiest{
+    height: 25vh;
+    padding-top: 10%;
+}
 
 	/* MOBIELE code binnen deze accolades van het @media stuk */
 }
@@ -392,6 +401,18 @@ body {
         #NaamLiedArtiest{
             height: 25vh;
             padding-top: 10%;
+        }
+
+        #ExitKnop{
+            height: 10vh;
+            padding-left: auto;
+            padding-top: 15%;
+            font-size: 50pt;
+            font-family: "roc-grotesk", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            color: white;
         }
 
 	/* DESKTOP code binnen deze accolades van het @media stuk */
