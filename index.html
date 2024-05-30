@@ -71,11 +71,16 @@
 </audio>
 
 <script type ="text/javascript">
-
+	var whosInControl = new Audio('Geluid/WhosInControl.mp3');
+	var innuendo = new Audio('Geluid/Innuendo.mp3');
+	var moonSetter = new Audio('Geluid/Moonsetter.mp3');
+	var aSadnessRuns = new Audio('Geluid/ASadnessRunsThroughHim.mp3');
+	var littleTalks = new Audio('Geluid/LittleTalks.mp3');
+	
 	/* Covers/Hoesjes */ 
 		/* "Who's In Control" - Set It Off */
 			function veranderCoverWIC(){
-				var whosInControl = new Audio('Geluid/WhosInControl.mp3');
+				
 				whosInControl.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
@@ -88,7 +93,7 @@
 
 			/* "Innuendo" - nelward */
 			function veranderCoverINNU(){
-				var innuendo = new Audio('Geluid/Innuendo.mp3');
+				
 				innuendo.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
@@ -99,7 +104,7 @@
 
 			/* "Moonsetter" - Toby Fox */
 			function veranderCoverMS(){
-				var moonSetter = new Audio('Geluid/Moonsetter.mp3');
+				
 				moonSetter.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
@@ -110,7 +115,7 @@
 
 			/* "A Sadness Runs Through Him" - The Hoosiers */
 			function veranderCoverASRTH(){
-				var aSadnessRuns = new Audio('Geluid/ASadnessRunsThroughHim.mp3');
+				
 				aSadnessRuns.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
@@ -120,7 +125,7 @@
 
 			/* "Little Talks" - Of Monsters and Men */
 			function veranderCoverLT(){
-				var littleTalks = new Audio('Geluid/LittleTalks.mp3');
+				
 				littleTalks.play();
 				document.getElementById("PlayingSong").style.display = "block";
 				document.getElementById("PlayingSongBackground").style.display = "block";
@@ -132,7 +137,12 @@
 		function ExitKnopVerlaat(){
 			document.getElementById("PlayingSong").style.display = "none";
 			document.getElementById("PlayingSongBackground").style.display = "none";
-			Audio.muted = true;
+			
+			whosInControl.pause();
+			innuendo.pause();
+			moonSetter.pause();
+			aSadnessRuns.pause();
+			littleTalks.pause();
 		}
 
 </script>
